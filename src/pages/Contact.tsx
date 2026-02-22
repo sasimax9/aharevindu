@@ -150,7 +150,7 @@ const Contact = () => {
                         type="tel"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 97005 29529"
                         required
                         className="bg-background"
                       />
@@ -274,8 +274,8 @@ const Contact = () => {
                 <div className="text-center">
                   <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
                   <p className="text-muted-foreground">
-                    123 Food Street, Koramangala<br />
-                    Bangalore, Karnataka 560034
+                    MEC Arcade, Chandanagar<br />
+                    Hyderabad, 500084
                   </p>
                 </div>
               </div>
