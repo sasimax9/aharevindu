@@ -58,7 +58,7 @@ const Services = () => {
       <section className="py-24 gradient-hero">
         <div className="container mx-auto px-4 text-center">
           <span className="inline-block px-4 py-2 bg-primary-foreground/20 text-primary-foreground rounded-full text-sm font-medium mb-6">
-            Our Services
+            Aharevindu Services
           </span>
           <h1 className="text-4xl md:text-6xl font-display font-bold text-primary-foreground mb-6">
             Catering for Every Occasion

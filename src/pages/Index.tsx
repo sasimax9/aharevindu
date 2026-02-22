@@ -5,6 +5,7 @@ import heroImage from "@/assets/hero-catering.jpg";
 import eventImage from "@/assets/service-events.jpg";
 import weddingImage from "@/assets/service-wedding.jpg";
 import corporateImage from "@/assets/service-corporate.jpg";
+import { Helmet } from "react-helmet-async";
 
 const stats = [
   { icon: Users, value: "5000+", label: "Happy Clients" },
@@ -16,17 +17,20 @@ const stats = [
 const services = [
   {
     title: "Wedding Catering",
-    description: "Make your special day unforgettable with our exquisite wedding menus.",
+    description:
+      "Make your special day unforgettable with our exquisite wedding menus.",
     image: weddingImage,
   },
   {
     title: "Corporate Events",
-    description: "Professional catering solutions for business meetings and conferences.",
+    description:
+      "Professional catering solutions for business meetings and conferences.",
     image: corporateImage,
   },
   {
     title: "Private Parties",
-    description: "Intimate gatherings with personalized menus crafted just for you.",
+    description:
+      "Intimate gatherings with personalized menus crafted just for you.",
     image: eventImage,
   },
 ];
@@ -34,6 +38,26 @@ const services = [
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Aharevindu – Premium Catering Services in Vijayawada</title>
+        <meta
+          name="description"
+          content="Aharevindu offers premium catering services for weddings, events and traditional food across Andhra Pradesh."
+        />
+        <link rel="canonical" href="https://aharevindu.in/" />
+
+        {/* OpenGraph (WhatsApp / Facebook preview) */}
+        <meta
+          property="og:title"
+          content="Aharevindu – Premium Catering Services"
+        />
+        <meta
+          property="og:description"
+          content="Premium catering for weddings & events across Andhra Pradesh."
+        />
+        <meta property="og:url" content="https://aharevindu.in/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div
@@ -53,7 +77,9 @@ const Index = () => {
               <span className="text-primary block">Lasting Memories</span>
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-              Experience the art of culinary excellence with Aharevindu. From intimate gatherings to grand celebrations, we craft unforgettable dining experiences.
+              Experience the art of culinary excellence with Aharevindu. From
+              intimate gatherings to grand celebrations, we craft unforgettable
+              dining experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button variant="hero" size="xl" asChild>
@@ -82,12 +108,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div
-                key={index}
-                className="text-center text-primary-foreground"
-              >
+              <div key={index} className="text-center text-primary-foreground">
                 <stat.icon className="w-10 h-10 mx-auto mb-4 opacity-80" />
-                <div className="text-3xl md:text-4xl font-display font-bold">{stat.value}</div>
+                <div className="text-3xl md:text-4xl font-display font-bold">
+                  {stat.value}
+                </div>
                 <div className="text-sm opacity-80 mt-1">{stat.label}</div>
               </div>
             ))}
@@ -99,12 +124,15 @@ const Index = () => {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-primary font-medium text-sm tracking-wider uppercase">What We Offer</span>
+            <span className="text-primary font-medium text-sm tracking-wider uppercase">
+              What We Offer
+            </span>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mt-4">
               Exceptional Catering Services
             </h2>
             <p className="text-muted-foreground mt-4">
-              From weddings to corporate events, we bring culinary excellence to every occasion.
+              From weddings to corporate events, we bring culinary excellence to
+              every occasion.
             </p>
           </div>
 
@@ -123,8 +151,12 @@ const Index = () => {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground via-foreground/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-primary-foreground">
-                  <h3 className="text-xl font-display font-bold mb-2">{service.title}</h3>
-                  <p className="text-sm text-primary-foreground/80 mb-4">{service.description}</p>
+                  <h3 className="text-xl font-display font-bold mb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-primary-foreground/80 mb-4">
+                    {service.description}
+                  </p>
                   <Link
                     to="/services"
                     className="inline-flex items-center text-primary font-medium text-sm hover:gap-3 transition-all"
@@ -152,7 +184,8 @@ const Index = () => {
               Ready to Create Something Special?
             </h2>
             <p className="text-lg text-primary-foreground/90">
-              Let's discuss your next event. Contact us today for a personalized consultation and quote.
+              Let's discuss your next event. Contact us today for a personalized
+              consultation and quote.
             </p>
             <Button variant="heroOutline" size="xl" asChild>
               <Link to="/contact">

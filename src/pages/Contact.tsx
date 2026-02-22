@@ -19,7 +19,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    details: ["Aharevindu , Chandanagar", "Hyderabad, 500084"],
+    details: ["Aharevindu , Chandanagar", "Hyderabad,  , Telangana, 500084"],
   },
   {
     icon: Clock,
@@ -275,7 +275,7 @@ const Contact = () => {
                   <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
                   <p className="text-muted-foreground">
                     MEC Arcade, Chandanagar<br />
-                    Hyderabad, 500084
+                    Hyderabad, Telangana, 500084
                   </p>
                 </div>
               </div>
