@@ -58,11 +58,11 @@ const About = () => {
             <div className="space-y-6">
               <span className="text-primary font-medium text-sm tracking-wider uppercase">Our Journey</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-                From a Small Kitchen to Bangalore's Favorite Caterer
+                From a Small Kitchen to Hyderabad's Favorite Caterer
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Aharevindu began in 2010 with a simple mission: to bring authentic, homemade flavors to every celebration. What started as a small family kitchen has grown into one of Bangalore's most trusted catering services.
+                  Aharevindu began in 2010 with a simple mission: to bring authentic, homemade flavors to every celebration. What started as a small family kitchen has grown into one of Hyderabad's most trusted catering services.
                 </p>
                 <p>
                   Our name "Aharevindu" combines "Ahara" (food) and "Vindu" (point/essence), representing our philosophy that food is the essence of every celebration. We believe that good food brings people together and creates lasting memories.
