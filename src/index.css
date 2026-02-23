@@ -101,23 +101,23 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Emilys Candy', cursive;
+    font-family: 'Poppins', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Emilys Candy', cursive;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
   }
 }
 
 @layer utilities {
   .font-display {
-    font-family: 'Emilys Candy', cursive;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
   }
 
   .font-sans {
-    font-family: 'Emilys Candy', cursive;
+    font-family: 'Poppins', sans-serif;
   }
 
   .gradient-hero {

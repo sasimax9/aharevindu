@@ -66,8 +66,8 @@ export default {
         },
       },
       fontFamily: {
-        display: ["Emilys Candy", "cursive"],
-        sans: ["Emilys Candy", "cursive"],
+        display: ["Playfair Display", "serif"],
+        sans: ["Poppins", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
